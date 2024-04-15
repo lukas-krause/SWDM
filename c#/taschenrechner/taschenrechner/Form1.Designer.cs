@@ -248,6 +248,7 @@
             textBox_input.Multiline = true;
             textBox_input.Name = "textBox_input";
             textBox_input.ReadOnly = true;
+            textBox_input.ScrollBars = ScrollBars.Vertical;
             textBox_input.Size = new Size(394, 68);
             textBox_input.TabIndex = 20;
             textBox_input.TextChanged += textBox_input_TextChanged;

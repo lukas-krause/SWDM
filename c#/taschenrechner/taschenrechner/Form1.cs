@@ -11,12 +11,16 @@ namespace taschenrechner
 
         private void textBox_input_TextChanged(object sender, EventArgs e)
         {
+            string lastLine = textBox_input.Lines.LastOrDefault();
             DataTable dt = new DataTable();
             try
             {
-                var result = dt.Compute(textBox_input.Text, null);
+                var result = dt.Compute(lastLine, null);
                 textBox_output.Text = result.ToString();
-            } catch { }  
+            } catch { }
+
+            textBox_input.SelectionStart = textBox_input.Text.Length;
+            textBox_input.ScrollToCaret();
         }
         private void button_null_Click(object sender, EventArgs e)
         {
@@ -119,14 +123,20 @@ namespace taschenrechner
         private void button_equals_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            try
+            string lastLine = textBox_input.Lines.LastOrDefault();
+            if(!string.IsNullOrEmpty(lastLine))
             {
-                var result = dt.Compute(textBox_input.Text, null);
-                textBox_output.Text = result.ToString();
-                textBox_input.Text = textBox_output.Text;
-                textBox_output.Text = "";
+                try
+                {
+                    var result = dt.Compute(lastLine, null);
+                    textBox_output.Text = result.ToString();
+
+                    textBox_input.Text += Environment.NewLine + textBox_output.Text;
+                    textBox_output.Text = "";
+                }
+                catch { }
             }
-            catch { }
+            
         }
     }
 }
