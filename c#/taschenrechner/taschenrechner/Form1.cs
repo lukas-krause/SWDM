@@ -17,7 +17,8 @@ namespace taschenrechner
             {
                 var result = dt.Compute(lastLine, null);
                 textBox_output.Text = result.ToString();
-            } catch { }
+            }
+            catch { }
 
             textBox_input.SelectionStart = textBox_input.Text.Length;
             textBox_input.ScrollToCaret();
@@ -124,7 +125,7 @@ namespace taschenrechner
         {
             DataTable dt = new DataTable();
             string lastLine = textBox_input.Lines.LastOrDefault();
-            if(!string.IsNullOrEmpty(lastLine))
+            if (!string.IsNullOrEmpty(lastLine))
             {
                 try
                 {
@@ -136,7 +137,12 @@ namespace taschenrechner
                 }
                 catch { }
             }
-            
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
