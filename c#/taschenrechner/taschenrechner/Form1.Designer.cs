@@ -59,24 +59,27 @@
             // 
             textBox_input.BackColor = SystemColors.Control;
             textBox_input.Dock = DockStyle.Top;
+            textBox_input.Font = new Font("Segoe UI", 16F);
             textBox_input.ForeColor = SystemColors.WindowText;
             textBox_input.Location = new Point(0, 0);
+            textBox_input.Margin = new Padding(3, 5, 3, 3);
             textBox_input.Multiline = true;
             textBox_input.Name = "textBox_input";
             textBox_input.ReadOnly = true;
             textBox_input.ScrollBars = ScrollBars.Vertical;
-            textBox_input.Size = new Size(1748, 80);
+            textBox_input.Size = new Size(664, 116);
             textBox_input.TabIndex = 20;
             textBox_input.TextChanged += textBox_input_TextChanged;
             // 
             // textBox_output
             // 
             textBox_output.Dock = DockStyle.Top;
-            textBox_output.Location = new Point(0, 80);
+            textBox_output.Font = new Font("Segoe UI", 16F);
+            textBox_output.Location = new Point(0, 116);
             textBox_output.Multiline = true;
             textBox_output.Name = "textBox_output";
             textBox_output.ReadOnly = true;
-            textBox_output.Size = new Size(1748, 78);
+            textBox_output.Size = new Size(664, 112);
             textBox_output.TabIndex = 22;
             textBox_output.TextAlign = HorizontalAlignment.Right;
             // 
@@ -108,7 +111,7 @@
             tableLayoutPanel1.Controls.Add(button_leftBracket, 1, 0);
             tableLayoutPanel1.Controls.Add(button_ac, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 158);
+            tableLayoutPanel1.Location = new Point(0, 228);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -116,15 +119,15 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(1748, 729);
+            tableLayoutPanel1.Size = new Size(664, 531);
             tableLayoutPanel1.TabIndex = 23;
             // 
             // button_equals
             // 
             button_equals.Dock = DockStyle.Fill;
-            button_equals.Location = new Point(1314, 583);
+            button_equals.Location = new Point(501, 427);
             button_equals.Name = "button_equals";
-            button_equals.Size = new Size(431, 143);
+            button_equals.Size = new Size(160, 101);
             button_equals.TabIndex = 50;
             button_equals.Text = "=";
             button_equals.UseVisualStyleBackColor = true;
@@ -133,9 +136,9 @@
             // button_delete
             // 
             button_delete.Dock = DockStyle.Fill;
-            button_delete.Location = new Point(877, 583);
+            button_delete.Location = new Point(335, 427);
             button_delete.Name = "button_delete";
-            button_delete.Size = new Size(431, 143);
+            button_delete.Size = new Size(160, 101);
             button_delete.TabIndex = 49;
             button_delete.Text = "delete";
             button_delete.UseVisualStyleBackColor = true;
@@ -144,9 +147,9 @@
             // button_point
             // 
             button_point.Dock = DockStyle.Fill;
-            button_point.Location = new Point(440, 583);
+            button_point.Location = new Point(169, 427);
             button_point.Name = "button_point";
-            button_point.Size = new Size(431, 143);
+            button_point.Size = new Size(160, 101);
             button_point.TabIndex = 48;
             button_point.Text = ".";
             button_point.UseVisualStyleBackColor = true;
@@ -155,9 +158,9 @@
             // button_null
             // 
             button_null.Dock = DockStyle.Fill;
-            button_null.Location = new Point(3, 583);
+            button_null.Location = new Point(3, 427);
             button_null.Name = "button_null";
-            button_null.Size = new Size(431, 143);
+            button_null.Size = new Size(160, 101);
             button_null.TabIndex = 47;
             button_null.Text = "0";
             button_null.UseVisualStyleBackColor = true;
@@ -166,9 +169,9 @@
             // button_plus
             // 
             button_plus.Dock = DockStyle.Fill;
-            button_plus.Location = new Point(1314, 438);
+            button_plus.Location = new Point(501, 321);
             button_plus.Name = "button_plus";
-            button_plus.Size = new Size(431, 139);
+            button_plus.Size = new Size(160, 100);
             button_plus.TabIndex = 46;
             button_plus.Text = "+";
             button_plus.UseVisualStyleBackColor = true;
@@ -177,9 +180,9 @@
             // button_three
             // 
             button_three.Dock = DockStyle.Fill;
-            button_three.Location = new Point(877, 438);
+            button_three.Location = new Point(335, 321);
             button_three.Name = "button_three";
-            button_three.Size = new Size(431, 139);
+            button_three.Size = new Size(160, 100);
             button_three.TabIndex = 45;
             button_three.Text = "3";
             button_three.UseVisualStyleBackColor = true;
@@ -188,9 +191,9 @@
             // button_two
             // 
             button_two.Dock = DockStyle.Fill;
-            button_two.Location = new Point(440, 438);
+            button_two.Location = new Point(169, 321);
             button_two.Name = "button_two";
-            button_two.Size = new Size(431, 139);
+            button_two.Size = new Size(160, 100);
             button_two.TabIndex = 44;
             button_two.Text = "2";
             button_two.UseVisualStyleBackColor = true;
@@ -199,9 +202,9 @@
             // button_one
             // 
             button_one.Dock = DockStyle.Fill;
-            button_one.Location = new Point(3, 438);
+            button_one.Location = new Point(3, 321);
             button_one.Name = "button_one";
-            button_one.Size = new Size(431, 139);
+            button_one.Size = new Size(160, 100);
             button_one.TabIndex = 43;
             button_one.Text = "1";
             button_one.UseVisualStyleBackColor = true;
@@ -210,9 +213,9 @@
             // button_four
             // 
             button_four.Dock = DockStyle.Fill;
-            button_four.Location = new Point(3, 293);
+            button_four.Location = new Point(3, 215);
             button_four.Name = "button_four";
-            button_four.Size = new Size(431, 139);
+            button_four.Size = new Size(160, 100);
             button_four.TabIndex = 41;
             button_four.Text = "4";
             button_four.UseVisualStyleBackColor = true;
@@ -221,9 +224,9 @@
             // button_five
             // 
             button_five.Dock = DockStyle.Fill;
-            button_five.Location = new Point(440, 293);
+            button_five.Location = new Point(169, 215);
             button_five.Name = "button_five";
-            button_five.Size = new Size(431, 139);
+            button_five.Size = new Size(160, 100);
             button_five.TabIndex = 40;
             button_five.Text = "5";
             button_five.UseVisualStyleBackColor = true;
@@ -232,9 +235,9 @@
             // button_six
             // 
             button_six.Dock = DockStyle.Fill;
-            button_six.Location = new Point(877, 293);
+            button_six.Location = new Point(335, 215);
             button_six.Name = "button_six";
-            button_six.Size = new Size(431, 139);
+            button_six.Size = new Size(160, 100);
             button_six.TabIndex = 39;
             button_six.Text = "6";
             button_six.UseVisualStyleBackColor = true;
@@ -243,9 +246,9 @@
             // button_minus
             // 
             button_minus.Dock = DockStyle.Fill;
-            button_minus.Location = new Point(1314, 293);
+            button_minus.Location = new Point(501, 215);
             button_minus.Name = "button_minus";
-            button_minus.Size = new Size(431, 139);
+            button_minus.Size = new Size(160, 100);
             button_minus.TabIndex = 42;
             button_minus.Text = "-";
             button_minus.UseVisualStyleBackColor = true;
@@ -254,9 +257,9 @@
             // button_nine
             // 
             button_nine.Dock = DockStyle.Fill;
-            button_nine.Location = new Point(877, 148);
+            button_nine.Location = new Point(335, 109);
             button_nine.Name = "button_nine";
-            button_nine.Size = new Size(431, 139);
+            button_nine.Size = new Size(160, 100);
             button_nine.TabIndex = 37;
             button_nine.Text = "9";
             button_nine.UseVisualStyleBackColor = true;
@@ -265,9 +268,9 @@
             // button_multiply
             // 
             button_multiply.Dock = DockStyle.Fill;
-            button_multiply.Location = new Point(1314, 148);
+            button_multiply.Location = new Point(501, 109);
             button_multiply.Name = "button_multiply";
-            button_multiply.Size = new Size(431, 139);
+            button_multiply.Size = new Size(160, 100);
             button_multiply.TabIndex = 38;
             button_multiply.Text = "*";
             button_multiply.UseVisualStyleBackColor = true;
@@ -276,9 +279,9 @@
             // button_eight
             // 
             button_eight.Dock = DockStyle.Fill;
-            button_eight.Location = new Point(440, 148);
+            button_eight.Location = new Point(169, 109);
             button_eight.Name = "button_eight";
-            button_eight.Size = new Size(431, 139);
+            button_eight.Size = new Size(160, 100);
             button_eight.TabIndex = 36;
             button_eight.Text = "8";
             button_eight.UseVisualStyleBackColor = true;
@@ -287,9 +290,9 @@
             // button_seven
             // 
             button_seven.Dock = DockStyle.Fill;
-            button_seven.Location = new Point(3, 148);
+            button_seven.Location = new Point(3, 109);
             button_seven.Name = "button_seven";
-            button_seven.Size = new Size(431, 139);
+            button_seven.Size = new Size(160, 100);
             button_seven.TabIndex = 35;
             button_seven.Text = "7";
             button_seven.UseVisualStyleBackColor = true;
@@ -298,9 +301,9 @@
             // button_divide
             // 
             button_divide.Dock = DockStyle.Fill;
-            button_divide.Location = new Point(1314, 3);
+            button_divide.Location = new Point(501, 3);
             button_divide.Name = "button_divide";
-            button_divide.Size = new Size(431, 139);
+            button_divide.Size = new Size(160, 100);
             button_divide.TabIndex = 34;
             button_divide.Text = "/";
             button_divide.UseVisualStyleBackColor = true;
@@ -309,9 +312,9 @@
             // button_rightBracket
             // 
             button_rightBracket.Dock = DockStyle.Fill;
-            button_rightBracket.Location = new Point(877, 3);
+            button_rightBracket.Location = new Point(335, 3);
             button_rightBracket.Name = "button_rightBracket";
-            button_rightBracket.Size = new Size(431, 139);
+            button_rightBracket.Size = new Size(160, 100);
             button_rightBracket.TabIndex = 33;
             button_rightBracket.Text = ")";
             button_rightBracket.UseVisualStyleBackColor = true;
@@ -320,9 +323,9 @@
             // button_leftBracket
             // 
             button_leftBracket.Dock = DockStyle.Fill;
-            button_leftBracket.Location = new Point(440, 3);
+            button_leftBracket.Location = new Point(169, 3);
             button_leftBracket.Name = "button_leftBracket";
-            button_leftBracket.Size = new Size(431, 139);
+            button_leftBracket.Size = new Size(160, 100);
             button_leftBracket.TabIndex = 32;
             button_leftBracket.Text = "(";
             button_leftBracket.UseVisualStyleBackColor = true;
@@ -333,7 +336,7 @@
             button_ac.Dock = DockStyle.Fill;
             button_ac.Location = new Point(3, 3);
             button_ac.Name = "button_ac";
-            button_ac.Size = new Size(431, 139);
+            button_ac.Size = new Size(160, 100);
             button_ac.TabIndex = 31;
             button_ac.Text = "AC";
             button_ac.UseVisualStyleBackColor = true;
@@ -341,12 +344,14 @@
             // 
             // Form1
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1748, 887);
+            ClientSize = new Size(664, 759);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(textBox_output);
             Controls.Add(textBox_input);
+            Font = new Font("Segoe UI", 12F);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Taschenrechner";
