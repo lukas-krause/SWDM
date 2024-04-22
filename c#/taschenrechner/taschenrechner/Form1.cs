@@ -1,4 +1,5 @@
 using System.Data;
+using System.Globalization;
 
 namespace taschenrechner
 {
@@ -123,6 +124,8 @@ namespace taschenrechner
 
         private void button_equals_Click(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
             DataTable dt = new DataTable();
             string lastLine = textBox_input.Lines.LastOrDefault();
             if (!string.IsNullOrEmpty(lastLine))
